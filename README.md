@@ -10,6 +10,14 @@
 
 关键词: Blue Archive、碧蓝档案、蔚蓝档案
 
+## 规范
+
+大部分提交均采用 [`约定式提交`](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 规范。
+
+**徽章**
+
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+
 ## 网站贡献者
 
  - [KFACBT](https://github.com/gytxtx/)
