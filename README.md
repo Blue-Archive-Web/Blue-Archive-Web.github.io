@@ -20,9 +20,9 @@
 
 ## 网站贡献者
 
- - [KFACBT](https://github.com/gytxtx/)
- - [Khrisma](https://github.com/Khrisma13/)
- - [Suisuroru](https://github.com/Suisuroru/)
+- [KFACBT](https://github.com/gytxtx/)
+- [Khrisma](https://github.com/Khrisma13/)
+- [Suisuroru](https://github.com/Suisuroru/)
 
 以上排名不分先后。
 

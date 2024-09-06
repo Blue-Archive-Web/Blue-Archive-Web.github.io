@@ -2,42 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Manage Multiple Audios</title>
 </head>
 <body>
-    <!-- 创建多个音频元素 -->
-    <audio id="audio1" controls>
-        <source src="path/to/your/audio1/file.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+<!-- 创建多个音频元素 -->
+<audio controls id="audio1">
+    <source src="path/to/your/audio1/file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <audio id="audio2" controls>
-        <source src="path/to/your/audio2/file.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+<audio controls id="audio2">
+    <source src="path/to/your/audio2/file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <audio id="audio3" controls>
-        <source src="path/to/your/audio3/file.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+<audio controls id="audio3">
+    <source src="path/to/your/audio3/file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <!-- 引入 JavaScript 代码 -->
-    <script>
-        // 获取所有的 audio 元素
-        var audios = document.querySelectorAll('audio');
+<!-- 引入 JavaScript 代码 -->
+<script>
+    // 获取所有的 audio 元素
+    var audios = document.querySelectorAll('audio');
 
-        // 为每个 audio 元素添加点击事件监听器
-        audios.forEach(function(audio) {
-            audio.addEventListener('play', function() {
-                // 停止其他所有 audio 元素的播放
-                audios.forEach(function(otherAudio) {
-                    if (otherAudio !== audio && !otherAudio.paused) {
-                        otherAudio.pause();
-                    }
-                });
+    // 为每个 audio 元素添加点击事件监听器
+    audios.forEach(function (audio) {
+        audio.addEventListener('play', function () {
+            // 停止其他所有 audio 元素的播放
+            audios.forEach(function (otherAudio) {
+                if (otherAudio !== audio && !otherAudio.paused) {
+                    otherAudio.pause();
+                }
             });
         });
-    </script>
+    });
+</script>
 </body>
 </html>
