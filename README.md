@@ -20,6 +20,8 @@
 
 ## 预览
 
-[`Blue-Archive-Web.github.io`](https://Blue-Archive-Web.github.io/)
+GitHub Pages: [`Blue-Archive-Web.github.io`](https://Blue-Archive-Web.github.io/)
 
-[`ba-web.pages.dev`](https://ba-web.pages.dev/)
+Cloudflare Pages: [`ba-web.pages.dev`](https://ba-web.pages.dev/) *可能在部分地区无法访问，如果遇到了这种情况，您可以访问下面的链接：*
+
+CF Pages(绑定域名): [`https://cf.xn--dyv4b972j7ga.com/`](https://cf.xn--dyv4b972j7ga.com/) *访问速度可能会更快*
