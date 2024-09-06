@@ -1,0 +1,56 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.bg-blue {
+    background: rgb(0, 93, 186);
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.header-top {
+    text-align: center!important;
+    color: #fff!important;
+    background: rgb(0, 93, 186);
+
+    /* 这玩意还是得留着，不留会出 Bug (Thinking) */
+    padding-top: 1px!important;  /* 设置顶部边距为 2rem */
+    padding-bottom: 1px!important;  /* 设置底部边距为 4rem */
+    
+    /* padding: 5px; */
+}
+
+.header-top p {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+
+    padding: 5px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-top p {
+        padding: 5px 0;
+        font-size: 15px;
+        line-height: 1.4;
+
+        /* 留着不留着好像没什么用 (Thinking) */
+        padding: 5px;  /* 统一设置内边距 */
+        margin: 5px;  /* 统一设置外边距 */
+    }
+}

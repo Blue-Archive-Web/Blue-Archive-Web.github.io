@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Example</title>
+</head>
+<body>
+    <!-- 创建多个音频元素 -->
+    <audio id="audio1" controls>
+        <source src="path/to/your/audio1/file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="audio2" controls>
+        <source src="path/to/your/audio2/file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="audio3" controls>
+        <source src="path/to/your/audio3/file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 创建一个链接 -->
+    <a href="https://example.com" id="myLink">点击这里</a>
+
+    <!-- 引入 JavaScript 代码 -->
+    <script>
+        // 获取所有的 audio 元素
+        var audios = document.querySelectorAll('audio');
+
+        // 为每个 audio 元素添加 play 事件监听器
+        audios.forEach(function(audio) {
+            audio.addEventListener('play', function() {
+                // 停止其他所有 audio 元素的播放
+                audios.forEach(function(otherAudio) {
+                    if (otherAudio !== audio && !otherAudio.paused) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+
+        // 获取链接元素
+        var link = document.getElementById('myLink');
+
+        // 添加点击事件监听器
+        link.addEventListener('click', function(event) {
+            // 检查是否有 audio 元素正在播放
+            var isPlaying = false;
+            audios.forEach(function(audio) {
+                if (!audio.paused) {
+                    isPlaying = true;
+                }
+            });
+
+            if (isPlaying) {
+                // 如果有音频在播放，弹出确认对话框
+                if (!confirm('音频正在播放。您确定要离开此页面吗？')) {
+                    // 如果用户点击取消，则阻止链接的默认行为
+                    event.preventDefault();
+                }
+            } else {
+                // 如果没有音频在播放，直接跳转
+                return;
+            }
+        });
+    </script>
+</body>
+</html>

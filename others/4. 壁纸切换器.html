@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Switcher</title>
+    
+    <!-- 引入 MDUI CSS 文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+
+    <style>
+        /* 针对整个页面设置背景图片 */
+        body {
+            background-image: url('./assets/images/121201261_p0.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+            /* 使用伪元素 ::before 创建一个透明背景层 */
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建一个按钮来打开壁纸选择器 -->
+    <button id="openDialogButton" class="mdui-btn mdui-btn-raised">选择壁纸</button>
+
+    <!-- 创建一个 dialog 来展示壁纸选择界面 -->
+    <div id="wallpaperDialog" class="mdui-dialog">
+        <div class="mdui-dialog-title">选择壁纸</div>
+        <div class="mdui-dialog-content">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-4">
+                    <img src="./assets/images/wallpaper1.jpg" alt="Wallpaper 1" onclick="changeBackground(this.src)">
+                </div>
+                <div class="mdui-col-xs-4">
+                    <img src="./assets/images/wallpaper2.jpg" alt="Wallpaper 2" onclick="changeBackground(this.src)">
+                </div>
+                <div class="mdui-col-xs-4">
+                    <img src="./assets/images/wallpaper3.jpg" alt="Wallpaper 3" onclick="changeBackground(this.src)">
+                </div>
+            </div>
+        </div>
+        <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple">no thanks</button>
+            <button class="mdui-btn mdui-color-theme mdui-ripple" onclick="closeDialog()">关闭</button>
+        </div>
+    </div>
+
+        <!-- 引入 MDUI JS 文件 -->
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+        <script>
+            // 初始化 MDUI
+            mdui.mutation();
+    
+            // 获取 dialog 对象
+            var dialog = new mdui.Dialog('#wallpaperDialog');
+    
+            // 获取按钮对象
+            var openDialogButton = document.getElementById('openDialogButton');
+    
+            // 为按钮添加点击事件监听器
+            openDialogButton.addEventListener('click', function() {
+                dialog.open();
+            });
+    
+            // 关闭 dialog 函数
+            function closeDialog() {
+                dialog.close();
+            }
+    
+            // 更改背景图片函数
+            function changeBackground(url) {
+                document.body.style.backgroundImage = 'url("' + url + '")';
+                dialog.close();
+            }
+        </script>
+
+</body>
+</html>

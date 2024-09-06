@@ -1,0 +1,43 @@
+.text-center {
+    text-align: center!important;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.bg-blue {
+    background: rgb(0, 93, 186);
+}
+
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.header-top {
+    text-align: center!important;
+    color: #fff!important;
+    background: rgb(0, 93, 186);
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.header-top {
+    padding-top: 2rem!important;  /* 设置顶部边距为 2rem */
+    padding-bottom: 4rem!important;  /* 设置底部边距为 4rem */
+}
+
+.header-top p {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-top p {
+        padding: 5px 0;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}

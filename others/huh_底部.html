@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 重置默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .text-center {
+            text-align: center !important;
+        }
+        
+        .text-white {
+            color: #fff !important;
+        }
+        
+        .bg-blue {
+            background: rgb(0, 93, 186);
+        }
+        
+        .header-top {
+            text-align: center !important;
+            color: #fff !important;
+            background: rgb(0, 93, 186);
+            padding: 5px;  /* 统一设置内边距 */
+        }
+        
+        .header-top p {
+            font-size: 18px;
+            margin-bottom: 0;
+            font-weight: 500;
+            padding: 5px;  /* 统一设置内边距 */
+            margin: 5px;  /* 统一设置外边距 */
+            position: relative;  /* 使 tooltip 相对于 p 元素定位 */
+        }
+        
+        .header-top p:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .tooltip {
+            position: absolute;
+            top: 100%;  /* 改为显示在底部 */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s ease;
+            white-space: nowrap;  /* 如果提示文字过长，可考虑换行 */
+        }
+        
+        .tooltip::before {
+            content: "";
+            position: absolute;
+            top: -5px;  /* 三角形箭头指向 */
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #333 transparent;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .header-top p {
+                font-size: 15px;
+                line-height: 1.4;
+                padding: 5px;  /* 统一设置内边距 */
+                margin: 5px;  /* 统一设置外边距 */
+            }
+        }
+        </style>
+</head>
+<body>
+
+<div class="header-top text-center text-white bg-blue">
+    <div class="container rel z-1">
+        <p>
+            Banner Text
+            <span class="tooltip">Tooltip Text</span>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

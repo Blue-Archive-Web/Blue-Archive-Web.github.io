@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="蔚蓝档案 的第三方网站。">
+    <meta name="keywords" content="碧蓝档案,蔚蓝档案,BlueArchive,Blue Archive,ブルーアーカイブ">
+    <!-- <meta name="author" content="您的名字"> -->
+
+    <!-- 设置页面主题色 -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 设置页面图标 -->
+    <!-- <link rel="shortcut icon" href="./favicon.ico"> -->
+    <link rel="icon" href="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png">
+
+    <!-- 设置页面标题 -->
+    <title>蔚蓝档案 - 第三方网站</title>
+
+    <!-- 引入 MDUI CSS 文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+
+    <link rel="stylesheet" href="./css/top-banner-fix.css" />
+
+
+    <style>
+        /* 针对整个页面设置背景图片 */
+        body {
+            background-image: url('./assets/images/pictures/121201261_p0.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+            /* 使用伪元素 ::before 创建一个透明背景层 */
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+        }
+
+        /* 针对某个具体的 div 设置背景(备用) */
+        .background-div {
+            background-image: url('./assets/images/pictures/121201261_p0.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .background-div::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+    </style>
+
+</head>
+
+<body class="mdui-theme-layout-auto mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-blue">
+
+    <div class="mdui-drawer mdui-drawer-close" id="main-menu">
+        <div class="mdui-list" mdui-collapse="{accordion: true}">
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">apps</i>
+                    <!-- <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">Home</div> -->
+                    <div class="mdui-list-item-content">内容</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./index.html" class="mdui-list-item mdui-ripple">首页</a>
+
+                </div>
+
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./links.html" class="mdui-list-item mdui-ripple">友情链接</a>
+
+                </div>
+
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./Music" class="mdui-list-item mdui-ripple">音乐列表</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mdui-container">
+
+        <!-- 设置应用栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+                    mdui-drawer="{target: '#main-menu', swipe: true}">
+                    <i class="mdui-icon material-icons">menu</i>
+                </span>
+                <a href="javascript:;" class="mdui-typo-headline">蔚蓝档案</a>
+                <a href="javascript:;" class="mdui-typo-title">第三方网站</a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">search</i>
+            </a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">refresh</i>
+            </a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">more_vert</i>
+            </a> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ver 1.0 -->
+    <!-- <div class="header-top text-center text-white bg-blue py-5">
+        <div class="container rel z-1">
+            <p>Banner Text</p>
+            
+        </div>
+    </div> -->
+
+    <!-- ver 1.1 -->
+    <!-- <div class="header-top text-center text-white bg-blue py-5">
+        <p title="Tooltip Text">Banner Text
+            <a href="javascript:;" target="_blank">点击查看</a>
+        </p>
+    </div> -->
+
+    <div class="header-top text-center text-white bg-blue py-5">
+
+        <div class="mdui-typo">
+            <p mdui-tooltip="{content: '国服新闻'}">🎉《蔚蓝档案》国服 发条之花的帕凡舞曲篇 第 2 章“友情、勇气与光的浪漫” 现已更新！
+                <a href="https://bluearchive-cn.com/news/1008" target="_blank">点击查看</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="mdui-container-fluid">
+        <br>
+        <!-- <br> -->
+        <p align="center">
+
+        <div class="mdui-card-content">
+
+            <div class="mdui-typo" style="height: auto !important;">
+                <!-- <h3>欢迎来到 KFACBT 的网站！</h3> -->
+                <h1 class="title">欢迎来到 <code>蔚蓝档案</code> 的 <strong>第三方</strong> 网站！</h1>
+
+                <h2 id="introduce">简介</h2>
+                <p>这是蔚蓝档案的第三方网站。</p>
+                <blockquote>
+                    <p>重要提示：本站是 <strong>非官方</strong> 网站，本网站表达的观点未必反应官方的观点。</p>
+                </blockquote>
+                <hr>
+
+                <h2 id="game_introduce">游戏简介</h2>
+                <p>关于游戏《<strong>蔚蓝档案</strong>》的介绍。</p>
+                <p>《蔚蓝档案》是一款由韩国 NEXON Games 旗下的 MX studio
+                    开发,上海悠星网络发行的二次元角色扮演游戏。以虚构的巨型联邦都市「基沃托斯」为故事背景。在这块神秘而辽阔的土地上，活跃着由少女们成立的、各具特色的活动社团，这些社团分别隶属于不同的「理事会」，「联邦理事会」是统合了数千个理事会的最高机构。但联邦理事会长突然消失，使这里的一切都陷入瘫痪。而作为联邦搜查社「沙勒」顾问老师的玩家，将与来自基沃托斯不同社团的少女们相遇，并与她们一起解决发生在「基沃托斯」的各种事件。
+                </p>
+                <hr>
+
+                <h2 id="official">官网</h2>
+                <p><a href="https://bluearchive.jp/">蔚蓝档案日服官网</a></p>
+                <p><a href="https://bluearchive.nexon.com/home">蔚蓝档案国际服官网</a></p>
+                <p><a href="https://bluearchive-cn.com/">蔚蓝档案国服官网</a> </p>
+                <hr>
+
+                <h2 id="download">下载</h2>
+                <!-- <h3 id="-">日服下载方式</h3>
+                    <p>您可以通过 <a href="https://play.google.com/store/apps/details?id=com.YostarJP.BlueArchive">Google Play</a> 、 <a href="https://apps.apple.com/app/id1515877221">AppStore</a> 来下载 <strong>日服</strong> Blue Archive</p>
+                    <h3 id="-">国际服下载方式</h3>
+                    <p>您可以通过 <a href="https://play.google.com/store/apps/details?id=com.nexon.bluearchive">Google Play</a> 、 <a href="https://apps.apple.com/tw/app/%E8%94%9A%E8%97%8D%E6%AA%94%E6%A1%88/id1571873795">AppStore</a> 来下载 <strong>国际服</strong> Blue Archive</p>
+                    <h3 id="-">国服下载方式</h3>
+                    <p>您可以通过 <a href="https://bluearchive-cn.com/">官网</a> 、 <a href="https://apps.apple.com/cn/app/%E8%94%9A%E8%93%9D%E6%A1%A3%E6%A1%88/id6447541184">AppStore</a> 、 <a href="https://www.taptap.cn/app/316964">TapTap</a> 来下载 <strong>国服</strong> 蔚蓝档案</p> -->
+
+                <!-- 如果遇到 使用 https://markdowntohtml.com/ 转换后表格无法正常显示的情况，请参阅 MDUI 官方文档中的 <a href="https://www.mdui.org/docs/table">表格</a> 部分。 -->
+                <!-- 在表格前部添加 -->
+                <!-- <div class="mdui-table-fluid">
+                        <table class="mdui-table"> -->
+                <!-- 替换掉表格中的 <table> 标签。 -->
+
+                <!-- 同样的，在表格末尾，添加 </div> 即可正常显示表格。 -->
+
+
+                <div class="mdui-table-fluid">
+                    <table class="mdui-table">
+                        <!-- <table> -->
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">服务器</th>
+                                <th style="text-align:center">官网 方式下载</th>
+                                <th style="text-align:center">Google Play 方式下载</th>
+                                <th style="text-align:center">AppStore 方式下载</th>
+                                <th style="text-align:center">其他 方式下载</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:center">日服</td>
+                                <td style="text-align:center">-</td>
+                                <td style="text-align:center"><a
+                                        href="https://play.google.com/store/apps/details?id=com.YostarJP.BlueArchive">Google
+                                        Play</a></td>
+                                <td style="text-align:center"><a
+                                        href="https://apps.apple.com/jp/app/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96/id1515877221">AppStore</a>
+                                </td>
+                                <td style="text-align:center">-</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">国际服</td>
+                                <td style="text-align:center">-</td>
+                                <td style="text-align:center"><a
+                                        href="https://play.google.com/store/apps/details?id=com.nexon.bluearchive">Google
+                                        Play</a></td>
+                                <td style="text-align:center"><a
+                                        href="https://apps.apple.com/app/id1571873795">AppStore</a></td>
+                                <td style="text-align:center">-</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">国服</td>
+                                <td style="text-align:center"><a href="https://bluearchive-cn.com/">官网</a></td>
+                                <td style="text-align:center">-</td>
+                                <td style="text-align:center"><a
+                                        href="https://apps.apple.com/cn/app/%E8%94%9A%E8%93%9D%E6%A1%A3%E6%A1%88/id6447541184">AppStore</a>
+                                </td>
+                                <td style="text-align:center"><a href="https://www.taptap.cn/app/316964">TapTap</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+
+                <h2 id="-wiki-">相关 <code>Wiki</code></h2>
+                <p><a href="https://ba.gamekee.com/">Gamekee</a></p>
+                <p><a href="https://wiki.biligame.com/ba/%E9%A6%96%E9%A1%B5">Bilibili Wiki</a></p>
+                <p><a href="https://bluearchive.wiki/wiki/Main_Page">BlueArchive Wiki</a></p>
+                <p><a href="https://bluearchive.fandom.com/wiki/Blue_Archive_Wiki">BlueArchive Fandom Wiki</a></p>
+                <hr>
+
+                <h2 id="relative_qun">相关交流群</h2>
+                <div class="mdui-table-fluid">
+                    <table class="mdui-table">
+                        <!-- <table> -->
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">群名称</th>
+                                <th style="text-align:center">群号</th>
+                                <th style="text-align:center">简介</th>
+                                <th style="text-align:center">保留</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align:center">夏萝莉的后宫5群</td>
+                                <td style="text-align:center"><a
+                                        href="https://qm.qq.com/cgi-bin/qm/qr?k=xJx5SpbL-Exu7Fk1oiIXldAN1J_LEUb4&amp;jump_from=webapi&amp;authKey=An0DcDs9/SDZsBNCDJWngMuQDt+ty7UPfwn4qto1JkCVLOAUK5TIS+ihQjTAfD2Q"><code>932119293</code></a>
+                                </td>
+                                <td style="text-align:center">群内主要用来讨论与交流关于 游戏《<strong>蔚蓝档案</strong>》；偶尔发癫
+                                    发色图；群主不是正常人；群里有男娘</td>
+                                <td style="text-align:center">-</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center">蔚蓝档案交流群</td>
+                                <td style="text-align:center"><a
+                                        href="https://qm.qq.com/q/WxAIDRLygw"><code>839638418</code></a></td>
+                                <td style="text-align:center">-</td>
+                                <td style="text-align:center">-</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <blockquote>
+                    <p>如果想申请添加名单，请联系我。</p>
+                </blockquote>
+                <hr>
+
+                <h2 id="sub_Domain">二级域名</h2>
+                <p>你可以 <a href="mailto:gytxtx@outlook.com">联系我</a> 来申请本域名的二级域名</p>
+                <hr>
+                <h2 id="about_me">关于我</h2>
+                <p><a href="https://github.com/gytxtx">GitHub</a></p>
+                <p><a href="https://space.bilibili.com/514279030/">哔哩哔哩</a></p>
+                <hr>
+                <h2 id="about_website">关于本网站</h2>
+                <p>本网站 是游戏 <strong>《蔚蓝档案》</strong> 的同人网站，其中的信息均为 <strong>已经公开了</strong> 的信息。本网站上的内容不代表任何官方观点。</p>
+                <p>本网站为非盈利站点。</p>
+                <p>本站与 <code>ブルーアーカイブ</code>、<code>Yostar</code>、<code>Nexon</code> 以及 <code>Nexon Games</code>
+                    没有任何形式的关联。</p>
+                <hr>
+                <p><a href="https://github.com/Blue-Archive-Web/Blue-Archive-Web.github.io">GitHub 仓库</a></p>
+
+                <div class="mdui-divider"></div>
+                <br>
+
+                <p>Copyright © 2024 <a href="https://github.com/gytxtx" target="_blank">KFACBT</a>. All rights reserved.
+                </p>
+                <p>本站基于 <a href="https://mdui.org/">MDUI</a> 构建，相关版权归原作者所有。</p>
+            </div>
+
+        </div>
+
+
+        </p>
+    </div>
+
+
+    <!-- 引入 MDUI JS 文件 -->
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+</body>
+
+</html>

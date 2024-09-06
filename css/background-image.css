@@ -1,0 +1,54 @@
+/* 针对整个页面设置背景图片 */
+/* 保留备用 */
+body {
+    background-image: url('./assets/images/121201261_p0.jpg');
+    /* 替换为你的图片路径 */
+    background-size: cover;
+    /* 图片大小覆盖整个屏幕 */
+    background-position: center center;
+    /* 背景图片居中显示 */
+    background-repeat: no-repeat;
+    /* 不重复背景图片 */
+    background-attachment: fixed;
+    /* 背景图片固定不动 */
+    opacity: 0.8;
+    /* 设置整体透明度，注意这会影响所有子元素 */
+}
+
+/* 针对某个具体的 div 设置背景(备用) */
+.background-div {
+    background-image: url('./assets/images/121201261_p0.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    /* 设置该 div 的透明度 */
+}
+
+/* 不影响子元素的透明度 */
+/* 针对整个页面设置背景图片 */
+body {
+    background-image: url('./assets/images/121201261_p0.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* 使用 rgba 定义颜色和透明度，并与背景图片混合 */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* 这里以白色为例，可以根据需要调整颜色和透明度 */
+    background-blend-mode: normal;
+    /* 根据需要选择混合模式 */
+}
+
+/* 针对某个具体的 div 设置背景(备用) */
+.background-div {
+    background-image: url('./assets/images/121201261_p0.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 使用 rgba 定义颜色和透明度，并与背景图片混合 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 这里以黑色为例，可以根据需要调整颜色和透明度 */
+    background-blend-mode: multiply;
+    /* 混合模式，根据需要选择 */
+}
