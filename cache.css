@@ -1,0 +1,14 @@
+/* 临时色带css */
+/* cache.css */
+.early-stage-banner {
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
