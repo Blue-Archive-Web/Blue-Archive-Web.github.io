@@ -1,0 +1,39 @@
+@font-face {
+    font-family: FZLanTYJW_Cu;
+    src: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/FZLanTYJW_Cu.c5f8d267.TTF);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: FZLanTYJW_Xi;
+    src: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/FZLanTYJW_Xi.31158e7c.TTF);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: FZLanTYK_Cu;
+    src: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/FZLanTYK_Cu.405dbab8.OTF);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: FZLanTYK_Zhong;
+    src: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/FZLanTYK_Zhong.c10069d1.OTF);
+    font-weight: 400;
+    font-style: normal
+}
+
+.title {
+    font-family: FZLanTYK_Zhong;
+    margin-left: .32rem;
+    color: #1f90fa
+}
+
+body {
+    font-family: FZLanTYK_Zhong;
+    /* margin: auto;
+    color: #1f90fa; */
+}
