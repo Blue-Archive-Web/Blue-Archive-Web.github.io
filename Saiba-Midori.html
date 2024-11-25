@@ -190,6 +190,7 @@
 
                 <div class="mdui-row">
                     <div class="mdui-col-md-5">
+                        <!-- 开始 -->
                         <div class="mdui-grid-tile">
                             <img src="./assets/images/pictures/112846744_p0.png" />
                             <div class="mdui-grid-tile-actions">
@@ -200,16 +201,46 @@
                                     </div>
                                 </div>
                                 <div class="mdui-grid-tile-buttons">
-                                    <a href="https://www.pixiv.net/artworks/112846744" target="_blank">
-                                        <button class="mdui-btn mdui-btn-icon">
-                                            <!-- <i class="mdui-icon material-icons">star_border</i> -->
 
-                                            <i class="mdui-icon material-icons">launch</i>
-                                        </button>
-                                    </a>
+                                    <!-- <button class="mdui-btn mdui-btn-icon"> -->
+                                    <button class="mdui-btn mdui-btn-icon"
+                                        onclick="openNewTab('https://www.pixiv.net/artworks/112846744')">
+                                        <!-- 无用 -->
+                                        <!-- <i class="mdui-icon material-icons">star_border</i> -->
+
+                                        <i class="mdui-icon material-icons">launch</i>
+                                    </button>
+
                                 </div>
                             </div>
                         </div>
+                        <!-- 结束 -->
+
+                        <!-- 开始 -->
+                        <div class="mdui-grid-tile">
+                            <img src="./assets/images/pictures/124023445_p0.png" />
+                            <div class="mdui-grid-tile-actions">
+                                <div class="mdui-grid-tile-text">
+                                    <div class="mdui-grid-tile-title">才羽ミドリ</div>
+                                    <div class="mdui-grid-tile-subtitle"><i
+                                            class="mdui-icon material-icons">person</i>插画作者：hagoonha
+                                    </div>
+                                </div>
+                                <div class="mdui-grid-tile-buttons">
+
+                                    <!-- <button class="mdui-btn mdui-btn-icon"> -->
+                                    <button class="mdui-btn mdui-btn-icon"
+                                        onclick="openNewTab('https://www.pixiv.net/artworks/124023445/')">
+                                        <!-- 无用 -->
+                                        <!-- <i class="mdui-icon material-icons">star_border</i> -->
+
+                                        <i class="mdui-icon material-icons">launch</i>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 结束 -->
 
                         <p>这是小绿，她很可爱</p>
                     </div>
@@ -240,6 +271,13 @@
         </p>
     </div>
 
+    <!-- JavaScript 部分 -->
+    <!-- 这一部分代码的作用：当调用这个函数的时候,会打开一个新标签页,参数是 `url` -->
+    <script>
+        function openNewTab(url) {
+            window.open(url, '_blank');
+        }
+    </script>
 
     <!-- 引入 MDUI JS 文件 -->
     <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
