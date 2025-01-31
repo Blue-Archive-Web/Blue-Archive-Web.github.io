@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Element Example</title>
+</head>
+<body>
+
+    <test-element></test-element>
+
+    <script>
+        // 定义自定义元素
+        class TestElement extends HTMLElement {
+            constructor() {
+                super();
+                // 创建一个 shadow DOM
+                const shadow = this.attachShadow({mode: 'open'});
+
+                // 将多个 HTML 元素插入 shadow DOM 中
+                shadow.innerHTML = `
+                    <div>
+                        <h1>Hello from Custom Element</h1>
+                        <p>This is a paragraph inside the custom element.</p>
+                        <button>Click Me</button>
+                    </div>
+                `;
+            }
+        }
+
+        // 注册自定义元素
+        customElements.define('test-element', TestElement);
+    </script>
+
+</body>
+</html>
